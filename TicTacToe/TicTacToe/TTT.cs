@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
+    public struct Zawodnik
+    {
+        public char Symbol;
+    }
+
     class TTT
     {
         public char[,] Plansza;
