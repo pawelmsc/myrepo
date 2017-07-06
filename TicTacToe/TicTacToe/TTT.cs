@@ -8,7 +8,9 @@ namespace TicTacToe
 {
     public struct Zawodnik
     {
+        public string Name;
         public char Symbol;
+        public int[] Co;
     }
 
     class TTT
