@@ -39,6 +39,10 @@
             this.rect02 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rect01 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rect00 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.pbx00 = new System.Windows.Forms.PictureBox();
+            this.pbx10 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx10)).BeginInit();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -114,15 +118,37 @@
             this.rect00.Name = "rect00";
             this.rect00.Size = new System.Drawing.Size(70, 70);
             // 
+            // pbx00
+            // 
+            this.pbx00.Location = new System.Drawing.Point(37, 16);
+            this.pbx00.Name = "pbx00";
+            this.pbx00.Size = new System.Drawing.Size(70, 70);
+            this.pbx00.TabIndex = 1;
+            this.pbx00.TabStop = false;
+            this.pbx00.Click += new System.EventHandler(this.pbx00_Click);
+            // 
+            // pbx10
+            // 
+            this.pbx10.Location = new System.Drawing.Point(37, 87);
+            this.pbx10.Name = "pbx10";
+            this.pbx10.Size = new System.Drawing.Size(70, 70);
+            this.pbx10.TabIndex = 2;
+            this.pbx10.TabStop = false;
+            this.pbx10.Click += new System.EventHandler(this.pbx10_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.pbx10);
+            this.Controls.Add(this.pbx00);
             this.Controls.Add(this.shapeContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
             this.Text = "Tic-Tac-Toe";
+            ((System.ComponentModel.ISupportInitialize)(this.pbx00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,6 +165,8 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rect02;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rect01;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rect00;
+        private System.Windows.Forms.PictureBox pbx00;
+        private System.Windows.Forms.PictureBox pbx10;
     }
 }
 

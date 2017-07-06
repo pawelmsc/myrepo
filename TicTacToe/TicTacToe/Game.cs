@@ -16,5 +16,15 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
+        private void pbx00_Click(object sender, EventArgs e)
+        {
+            pbx00.Image = Properties.Resources.circle;
+        }
+
+        private void pbx10_Click(object sender, EventArgs e)
+        {
+            pbx10.Image = Properties.Resources.cross;
+        }
     }
 }
