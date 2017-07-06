@@ -30,7 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.rect22 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect21 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect20 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect10 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect11 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect12 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect02 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect01 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rect00 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -39,18 +47,72 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
+            this.rect22,
+            this.rect21,
+            this.rect20,
+            this.rect10,
+            this.rect11,
+            this.rect12,
+            this.rect02,
+            this.rect01,
+            this.rect00});
             this.shapeContainer1.Size = new System.Drawing.Size(284, 261);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
+            // rect22
             // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 132;
-            this.lineShape1.X2 = 132;
-            this.lineShape1.Y1 = 97;
-            this.lineShape1.Y2 = 154;
+            this.rect22.Location = new System.Drawing.Point(177, 156);
+            this.rect22.Name = "rect22";
+            this.rect22.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect21
+            // 
+            this.rect21.Location = new System.Drawing.Point(107, 156);
+            this.rect21.Name = "rect21";
+            this.rect21.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect20
+            // 
+            this.rect20.Location = new System.Drawing.Point(37, 156);
+            this.rect20.Name = "rect20";
+            this.rect20.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect10
+            // 
+            this.rect10.Location = new System.Drawing.Point(37, 86);
+            this.rect10.Name = "rect10";
+            this.rect10.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect11
+            // 
+            this.rect11.Location = new System.Drawing.Point(107, 86);
+            this.rect11.Name = "rect11";
+            this.rect11.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect12
+            // 
+            this.rect12.Location = new System.Drawing.Point(177, 86);
+            this.rect12.Name = "rect12";
+            this.rect12.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect02
+            // 
+            this.rect02.Location = new System.Drawing.Point(177, 16);
+            this.rect02.Name = "rect02";
+            this.rect02.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect01
+            // 
+            this.rect01.Location = new System.Drawing.Point(107, 16);
+            this.rect01.Name = "rect01";
+            this.rect01.Size = new System.Drawing.Size(70, 70);
+            // 
+            // rect00
+            // 
+            this.rect00.Location = new System.Drawing.Point(37, 16);
+            this.rect00.Name = "rect00";
+            this.rect00.Size = new System.Drawing.Size(70, 70);
             // 
             // Game
             // 
@@ -60,7 +122,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
-            this.Text = "Kółko i krzyżyk";
+            this.Text = "Tic-Tac-Toe";
             this.ResumeLayout(false);
 
         }
@@ -68,7 +130,15 @@
         #endregion
 
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect22;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect21;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect20;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect10;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect11;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect12;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect02;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect01;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rect00;
     }
 }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    public struct Zawodnik
+    public struct Player
     {
         public string Name;
         public char Symbol;
@@ -15,11 +15,17 @@ namespace TicTacToe
 
     class TTT
     {
-        public char[,] Plansza;
+        public char[,] Board;
+        public Player[] Players;
 
         public TTT()
         {
-            Plansza = new char[3, 3];
+            Board = new char[3, 3];
+            Players = new Player[2];
+            Players[0].Co = new int[2];
+            Players[1].Co = new int[2];
+            Players[0].Name = "P1";
+            Players[1].Name = "P2";
         }
     }
 }
