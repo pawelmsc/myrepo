@@ -48,6 +48,7 @@
             this.pbx22 = new System.Windows.Forms.PictureBox();
             this.pbx12 = new System.Windows.Forms.PictureBox();
             this.pbx02 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbx00)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx20)).BeginInit();
@@ -213,12 +214,22 @@
             this.pbx02.TabStop = false;
             this.pbx02.Click += new System.EventHandler(this.pbx02_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(197, 234);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pbx22);
             this.Controls.Add(this.pbx12);
             this.Controls.Add(this.pbx02);
@@ -266,6 +277,7 @@
         private System.Windows.Forms.PictureBox pbx22;
         private System.Windows.Forms.PictureBox pbx12;
         private System.Windows.Forms.PictureBox pbx02;
+        private System.Windows.Forms.Button button1;
     }
 }
 
