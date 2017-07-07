@@ -55,6 +55,7 @@
             this.tbxP2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
+            this.lblTip = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx00)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx20)).BeginInit();
@@ -292,12 +293,22 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // lblTip
+            // 
+            this.lblTip.AutoSize = true;
+            this.lblTip.Location = new System.Drawing.Point(9, 264);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(35, 13);
+            this.lblTip.TabIndex = 17;
+            this.lblTip.Text = "label3";
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(270, 293);
+            this.Controls.Add(this.lblTip);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.tbxP2);
             this.Controls.Add(this.label2);
@@ -351,6 +362,7 @@
         private System.Windows.Forms.TextBox tbxP2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblTip;
     }
 }
 
