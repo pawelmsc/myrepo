@@ -12,9 +12,13 @@ namespace TicTacToe
 {
     public partial class Game : Form
     {
+        private TTT GameTTT;
+
         public Game()
         {
             InitializeComponent();
+            gbxGame.Visible = false;
+            GameTTT = new TTT();
         }
 
         private void pbx00_Click(object sender, EventArgs e)
@@ -60,6 +64,23 @@ namespace TicTacToe
         private void pbx22_Click(object sender, EventArgs e)
         {
             pbx22.Image = Properties.Resources.circle;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+            btnStart.Visible = false;
+            tbxP1.Visible = false;
+            tbxP2.Visible = false;
+            GameTTT.Players[0].Name = tbxP1.Text;
+            GameTTT.Players[1].Name = tbxP2.Text;
+            gbxGame.Visible = true;
         }
     }
 }
